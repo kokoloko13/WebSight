@@ -30,6 +30,7 @@ WebSight project uses a number of technologies to work properly:
 - JavaScript
 - [Express](http://expressjs.com)
 - [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
 - [Html2Canvas](https://html2canvas.hertzen.com/)
 
 ## Installation
