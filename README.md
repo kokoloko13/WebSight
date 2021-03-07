@@ -24,18 +24,35 @@ WebSight is a NodeJS based web application and JavaScript library for monitoring
 
 WebSight project uses a number of technologies to work properly:
 
-- [NodeJS](https://nodejs.org/en/)
-- HTML5
-- [SASS (Syntactically Awesome Style Sheets)](https://sass-lang.com/)
-- JavaScript
-- [Express](http://expressjs.com)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Html2Canvas](https://html2canvas.hertzen.com/)
+|Name|Version|
+|----|-------|
+|[NodeJS](https://nodejs.org/en/)| LTS|
+|HTML| 5|
+|[SASS (Syntactically Awesome Style Sheets)](https://sass-lang.com/)| Latest|
+|JavaScript| Latest |
+|[MongoDB](https://www.mongodb.com/)| Latest |
+|[Docker](https://www.docker.com/)|Lates|
+
+### Libraries and packages:
+
+|Name|Version|
+|----|-------|
+|[Express](http://expressjs.com)|^4.17.1|
+|[Mongoose](https://mongoosejs.com/)|^5.11.19|
+|[Html2Canvas](https://html2canvas.hertzen.com/)|Latest |
+|[Express-Validator](https://express-validator.github.io/docs/)|^6.10.0|
+|[BCrypt](https://www.npmjs.com/package/bcrypt)|^5.0.1|
+|[CORS](https://www.npmjs.com/package/cors)|^2.8.5|
+|[DotEnv](https://www.npmjs.com/package/dotenv)|^8.2.0|
+|[Passport](http://www.passportjs.org/)|^0.4.1|
+|[Passport-JWT](http://www.passportjs.org/packages/passport-jwt/)|^4.0.0|
+|[Node-Fetch](https://www.npmjs.com/package/node-fetch)|^2.6.1|
+|[Nodemon](https://www.npmjs.com/package/nodemon)|^2.0.7|
+
 
 ## Installation
 
-WebSight requires [Node.js](https://nodejs.org/) v10+ to run.
+WebSight requires [Node.js](https://nodejs.org/) v14+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
