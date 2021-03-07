@@ -31,7 +31,7 @@ WebSight project uses a number of technologies to work properly:
 |[SASS (Syntactically Awesome Style Sheets)](https://sass-lang.com/)| Latest|
 |JavaScript| Latest |
 |[MongoDB](https://www.mongodb.com/)| Latest |
-|[Docker](https://www.docker.com/)|Lates|
+|[Docker](https://www.docker.com/)|Latest|
 
 ### Libraries and packages:
 
