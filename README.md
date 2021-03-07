@@ -51,7 +51,7 @@ WebSight project uses a number of technologies to work properly:
 
 ## Installation
 
-WebSight requires [Node.js](https://nodejs.org/) v10+ to run.
+WebSight requires [Node.js](https://nodejs.org/) v14+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
