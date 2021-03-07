@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-HotSight is a NodeJS based web application and JavaScript library for monitoring and analyzing of the behavior of users of websites.
+WebSight is a NodeJS based web application and JavaScript library for monitoring and analyzing of the behavior of users of websites.
 
 ## Features (v1.0)
 1. Monitoring most clickable sections on the website
