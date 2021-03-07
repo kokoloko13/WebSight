@@ -1,14 +1,29 @@
-version: "3"
+version: "3.8"
 
 services:
+  mongodb:
+    build: "./mongodb"
+    image: mongo
+    container_name: mongodb
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./mongodb/database:/data/db
+    ports:
+      - 27017:27017
+    restart: unless-stopped
+    
   auth-service:
     build: "./auth"
     volumes:
       - ./auth:/home/node/app
-    ports: = 8001:80
+    ports:
+      - 8001:80
     depends_on:
       - auth-service
       - db-service
+      - mongodb
 
   db-service:
     build: "./db"
