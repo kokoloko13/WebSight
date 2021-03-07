@@ -1,0 +1,60 @@
+version: "3"
+
+services:
+  auth-service:
+    build: "./auth"
+    volumes:
+      - ./auth:/home/node/app
+    ports: = 8001:80
+    depends_on:
+      - auth-service
+      - db-service
+
+  db-service:
+    build: "./db"
+    volumes:
+      - ./db:/home/node/app
+    ports:
+      - 8002:80
+
+  heatmap-service:
+    build: "./heatmap"
+    volumes:
+      - ./heatmap:/home/node/app
+    ports:
+      - 8003:80
+    depends_on:
+      - auth-service
+      - db-service
+
+  traffic-service:
+    build: "./traffic"
+    volumes:
+      - ./traffic:/home/node/app
+    ports:
+      - 8004:80
+    depends_on:
+      - auth-service
+      - db-service
+
+  collect-service:
+    build: "./collect"
+    volumes:
+      - ./collect:/home/node/app
+    ports:
+      - 8005:80
+    depends_on:
+      - auth-service
+      - db-service
+
+  web-service:
+    build: "./web"
+    volumes:
+      - ./web:/home/node/app
+    ports:
+      - 80:80
+    depends_on:
+      - auth-service
+      - heatmap-service
+      - traffic-service
+      - collect-service
