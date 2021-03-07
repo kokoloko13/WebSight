@@ -2,12 +2,12 @@
 ## Web application for monitoring and analyzing of the behavior of users of websites
 
 
-[[Commits](https://badgen.net/github/commits/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
-[[Last commit](https://badgen.net/github/last-commit/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
-[[Branches](https://badgen.net/github/branches/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
-[[Issues](https://badgen.net/github/issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
-[[Open issues](https://badgen.net/github/open-issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
-[[Closed issues](https://badgen.net/github/closed-issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Commits](https://badgen.net/github/commits/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Last commit](https://badgen.net/github/last-commit/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Branches](https://badgen.net/github/branches/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Issues](https://badgen.net/github/issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Open issues](https://badgen.net/github/open-issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
+[![Closed issues](https://badgen.net/github/closed-issues/kokoloko13/WebSight)](https://github.com/kokoloko13/WebSight)
 
 
 WebSight is a NodeJS based web application and JavaScript library for monitoring and analyzing of the behavior of users of websites.
