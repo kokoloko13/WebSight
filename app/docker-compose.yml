@@ -13,6 +13,7 @@ services:
     ports:
       - 27017:27017
     restart: unless-stopped
+
     
   auth-service:
     build: "./auth"
@@ -24,6 +25,10 @@ services:
       - auth-service
       - db-service
       - mongodb
+    links:
+      - "auth-service"
+      - "db-service"
+      - "mongodb"
 
   db-service:
     build: "./db"
@@ -31,6 +36,10 @@ services:
       - ./db:/home/node/app
     ports:
       - 8002:80
+    depends_on:
+      - mongodb
+    links:
+      - "mongodb"
 
   heatmap-service:
     build: "./heatmap"
@@ -41,6 +50,9 @@ services:
     depends_on:
       - auth-service
       - db-service
+    links:
+      - "auth-service"
+      - "db-service"
 
   traffic-service:
     build: "./traffic"
@@ -51,6 +63,9 @@ services:
     depends_on:
       - auth-service
       - db-service
+    links:
+      - "auth-service"
+      - "db-service"
 
   collect-service:
     build: "./collect"
@@ -61,6 +76,9 @@ services:
     depends_on:
       - auth-service
       - db-service
+    links:
+      - "auth-service"
+      - "db-service"
 
   web-service:
     build: "./web"
@@ -73,3 +91,8 @@ services:
       - heatmap-service
       - traffic-service
       - collect-service
+    links:
+      - "collect-service"
+      - "auth-service"
+      - "heatmap-service"
+      - "traffic-service"
