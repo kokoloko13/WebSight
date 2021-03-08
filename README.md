@@ -54,6 +54,7 @@ WebSight project uses a number of technologies to work properly:
 |[Passport-JWT](http://www.passportjs.org/packages/passport-jwt/)|^4.0.0|
 |[Node-Fetch](https://www.npmjs.com/package/node-fetch)|^2.6.1|
 |[Nodemon](https://www.npmjs.com/package/nodemon)|^2.0.7|
+|[pug](https://pugjs.org/api/getting-started.html)|^3.0.2|
 
 
 ## Installation
